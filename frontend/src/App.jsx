@@ -1,19 +1,18 @@
 import { useState } from "react";
 import Group from "./components/Group.jsx";
+import Home from "./components/Home/Home.jsx";
 
 function App() {
-  const [showGroup, setShowGroup] = useState(false);
+  const [screen, setScreen] = useState("home"); // 'home' | 'group'
 
   return (
     <div>
-      <h1>Gerenciador de gifs</h1>
+      {screen === "home" && (
+        <Home onGoToGroup={() => setScreen("group")} />
+      )}
 
-      {!showGroup ? (
-        <button onClick={() => setShowGroup(true)}>
-          Ir para Grupo de Gifs
-        </button>
-      ) : (
-        <Group />
+      {screen === "group" && (
+        <Group onBack={() => setScreen("home")} />
       )}
     </div>
   );

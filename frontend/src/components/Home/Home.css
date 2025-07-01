@@ -1,0 +1,96 @@
+.container-home {
+  background-color: #fddbb0;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-button {
+  background: white;
+  padding: 6px 12px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #713200;
+  border-radius: 50%;
+}
+
+.profile-text {
+  font-weight: bold;
+  color: #713200;
+}
+
+.menu-button {
+  background: white;
+  border: none;
+  font-size: 20px;
+  border-radius: 8px;
+  padding: 4px 10px;
+}
+
+.game-day-card {
+  background-color: white;
+  border-radius: 12px;
+  height: 100px;
+  margin: 10px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.small-cards-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.card-mini {
+  flex: 1;
+  height: 60px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.historic-box {
+  background-color: white;
+  border-radius: 12px;
+  height: 160px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 16px;
+}
+
+.bottom-boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.box-left {
+  width: 70px;
+  height: 90px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.box-right-top,
+.box-right-bottom {
+  flex: 1;
+  height: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
